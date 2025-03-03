@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: purple;
+        margin: 0;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        margin-bottom: 2rem;
+      }
+      input,
+      select,
+      textarea,
+      button {
+        width: 80%;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+      label {
+        text-align: left;
+        margin-top: 10px;
+        display: block;
+        font-weight: bold;
+      }
+      button {
+        background: darkmagenta;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #222f3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Full Name" required />
+        <label for="email">Email Address</label>
+        <input type="email" placeholder="Email Address" required />
+        <label for="country">Country</label>
+        <select title="Select Your Country" required>
+          <option value="">Select Your Country</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Palestine">Palestine</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="comment">Comment</label>
+        <textarea placeholder="Your Comment..." rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
